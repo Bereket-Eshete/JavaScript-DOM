@@ -28,12 +28,12 @@ addTask.addEventListener("click", function () {
   }
 
   inputTask.value = "";
+
   checkButton.addEventListener("click", function () {
     checkButton.parentElement.style.textDecoration = "line-through";
   });
 
-  deleteButton.addEventListener("click", function () {
-    let target = e.target;
-    target.parentElement.parentElement.remove();
+  deleteButton.addEventListener("click", function (e) {
+    e.target.closest(".task").remove();
   });
 });

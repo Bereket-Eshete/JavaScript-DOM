@@ -90,3 +90,6 @@ input {
   color: #fff;
   background: red;
 }
+#input-task {
+  margin-bottom: 10px;
+}
